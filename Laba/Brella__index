@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>Brella</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="nav__container">
+                <a class="logo"><img src="img/Frame.png"></a>
+                    <div class="links">
+                        <li><a href="#contentWhy" class="link__item">Our Plan</a></li>
+                        <li><a href="#contentCustomize" class="link__item">Emplayers</a></li>
+                        <li><a href="#contentRating" class="link__item">Brokers</a></li>
+                        <li><a href="#contentSlider" class="link__item">Members</a></li>
+                        <li><a href="#contentAbout" class="link__item">About</a></li>
+                        <li><a href="#contentBlog" class="link__item">Blog</a></li>
+                        <li><button class="link__button">Request demo</button></li>
+                        <select name="auth" id="authSection" class="auth__section">
+                            <option value="login">Login</option>
+                            <option value="register">Register</option>
+                        </select>
+                        <li><a href="#" class="link__item">EN</a></li>
+                    </div>
+            </div>
+        </nav>
+        
+        <div class="header__container">
+            <div class="header__block">
+                <h2>Give your team peace of mind with supplemental health insurance from Brella.</h2>
+                <p>I'm wondering...</p>
+                <div class="header__inputs">
+                    <input type="text" placeholder="how Brella's plan works">
+                     <button>Find out</button>
+                </div>
+            </div>
+            <div class="header__items_body">
+                <div class="header__items">
+                    <div class="header__item">
+                        <img src="img/header_item_1.png" draggable="false" class="header__item_img">
+                        <div class="header__item_text">
+                            <p class="header__item_title">More coverage</p>
+                            <p class="header__item_subtitle">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <img src="img/header_item_2.png" draggable="false" class="header__item_img">
+                            <div class="header__item_text">
+                                <p class="header__item_title">Less hassle</p>
+                                <p class="header__item_subtitle">One easy-to-manage plan with paperless install and online admin tools.</p>
+                            </div>
+                    </div>
+                        <div class="header__item">
+                            <img src="img/header_item_3.png" draggable="false" class="header__item_img">
+                            <div class="header__item_text">
+                                <p class="header__item_title">Faster benefits</p>
+                                <p class="header__item_subtitle">Brella pays claims in hours–not weeks so your people can rest easy.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <main class="content">
+            <section class="content__why">
+                <div class="content__why_container">
+                    <div class="content__why_column">
+                        <span class="content__why_question">Why Brella?</span>
+                        <h3 class="content__why_title">Today, any health insurance deductible can feel like a high deductible.</h3>
+                        <p class="content__why_subtitle">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
+                        <p class="content__why_link">See our <br> plan</p>
+                    </div>
+                    <div class="content__why_column_text">
+                        <h3 class="content__analytic_title">60%</h3>
+                        <p class="content__analytic_subtitle">of Americans <span>would have to borrow</span> to cover an unexpected $1000 expense</p>
+                    </div>
+                    <div class="why_column">
+                        <div class="content__why_item h11">
+                            <p class="why__item_price">$1,644</p>
+                            <div class="why__item_height height__deductible"></div>
+                            <p class="why__item_title">Deductible</p>
+                        </div>
+                        <div class="content__why_item">
+                            <p class="why__item_price">$1,644</p>
+                            <div class="why__item_height height__anual"></div>
+                            <p class="why__item_title">Deductible</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__customize">
+                <div class="customize__item_custom">
+                    <span class="item__custom_author">brella brings</span>
+                    <ul>
+                        <li><p class="item__custom_link link_active">Customizable benefits</p></li>
+                        <li><p class="item__custom_link">Paperless install & admin</p></li>
+                        <li><p class="item__custom_link">Effortless enrollment</p></li>
+                        <li><p class="item__custom_link">Easy claims experience</p></li>
+                        <li><p class="item__custom_link">Fast benefit payouts</p></li>
+                        <li><p class="item__custom_link">Concierge support</p></li>
+                    </ul>
+                </div>
+                <div class="customize__item_description">
+                    <p class="item_description">
+                        Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.
+                        Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.
+                    </p>
+                </div>
+            </section>
+        </main>
+</body>
+</html>

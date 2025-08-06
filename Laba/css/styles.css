@@ -1,1 +1,405 @@
-/* styles */
+/* Обнуление */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+nav, header {
+    display: block;
+}
+li {
+    list-style: none;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background: #fafafa;
+    scroll-behavior: smooth;
+}
+input, button {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+h2, h3 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* Навигация */
+.nav {
+    width: 100%;
+    height: 6.429rem;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.nav__container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2.143rem 1.071rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font: 24px 'Raleway', sans-serif;
+    color: #214E41;
+}
+.links {
+    display: flex;
+    gap: 3.571rem;
+}
+.link__item {
+    font: 700 1rem/1.429rem 'Raleway', sans-serif;
+    color: #214E41;
+}
+.link__button {
+    height: 2.857rem;
+    padding: 0 1.071rem;
+    margin-top: -0.714rem;
+    border: none;
+    border-radius: 0.429rem;
+    background: #43806C;
+    font: 700 1rem/1.429rem 'Raleway', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+.auth__section {
+    border: none;
+    margin-top: -0.357rem;
+    font: 700 1rem/1.429rem 'Raleway', sans-serif;
+    color: #214E41;
+}
+.nav a:hover,
+.nav button:hover {
+    opacity: .8;
+}
+/*
+Бургер меню
+.menu-btn span:nth-of-type(2) {
+    top: calc(40% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+    top: calc(60% - 5px);
+}*/
+
+/* Хедер */
+.header {
+    height: 57.857rem;
+    background: url('../img/headerBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.header__container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 1.071rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header__block {
+    margin-top: 11.5rem;
+}
+.header__block h2 {
+    max-width: 36.857rem;
+    font: 700 2.571rem/3.286rem 'Roboto', sans-serif;
+    color: #214E41;
+}
+.header__block p {
+    margin-top: 2.857rem;
+    font: 700 1.143rem/1.714rem 'Raleway', sans-serif;
+    color: #214E41;
+}
+.header__inputs {
+    margin-top: 1.143rem;
+    display: flex;
+}
+.header__inputs input {
+    width: 20rem;
+    height: 4.286rem;
+    padding: 1.429rem;
+    border-radius: 0.429rem 0 0 0.429rem;
+    border: none;
+    background: #fff;
+    font: 700 1rem/1.429rem 'Raleway', sans-serif;
+    color: #222;
+}
+.header__inputs button {
+    width: 8.786rem;
+    border-radius: 0 0.429rem 0.429rem 0;
+    border: none;
+    background: #43806C;
+    font: 700 0.929rem/1.429rem 'Raleway', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+.header__items_body {
+    padding: 1.071rem 1.071rem;
+    display: flex;
+    justify-content: center;
+}
+.header__items {
+    margin-top: 13.286rem;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgba(232, 230, 230, 0.6);
+    border-radius: 0.429rem;
+    max-width: 85.714rem;
+    width: 100%;
+    min-height: 12.214rem;
+    padding: 1.071rem;
+    display: flex;
+}
+.header__item {
+    display: flex;
+    margin-left: 3.214rem;
+    margin-top: 1.429rem;
+    justify-content: center;
+    align-items: center;
+}
+.header__item_img {
+    height: 3.214rem;
+}
+.header__item_title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.143rem;
+    line-height: 1.714rem;
+    color: #214E41;
+}
+.header__item_subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.429rem;
+    color: #214E41;
+    max-width: 19.714rem;
+}
+.header__item_text {
+    margin-left: 0.714rem;
+}
+
+/* Секция Why */
+.content__why {
+    margin-top: 15.214rem;
+}
+.content__why_container {
+    max-width: 75.571rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.071rem;
+}
+.content__why_question {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.429rem;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #43806C;
+}
+.content__why_title {
+    max-width: 34.143rem;
+    margin-top: 1.429rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.571rem;
+    line-height: 3.286rem;
+    color: #214E41;
+}
+.content__why_subtitle {
+    max-width: 34.071rem;
+    margin-top: 2.429rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.286rem;
+    line-height: 2.143rem;
+    letter-spacing: 0.02px;
+    color: #757575;
+}
+.content__why_link {
+    margin-top: 1.714rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.286rem;
+    line-height: 1.286rem;
+    letter-spacing: 0.02px;
+    color: #214E41;
+    cursor: pointer;
+    border-bottom: 2px solid #214E41;
+    padding-bottom: 0.357rem;
+    width: 7.643rem;
+    text-align: center;
+}
+.content__why_link:hover {
+    opacity: .8;
+}
+.content__why_column_text {
+    margin-top: 9.286rem;
+}
+.content__analytic_title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6.429rem;
+    color: #214E41;
+    border-bottom: 0.143rem solid #F0A446;
+    padding-bottom: 0.714rem;
+}
+.content__analytic_subtitle {
+    max-width: 16rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height: 1.571rem;
+    letter-spacing: 0.02px;
+    color: #214E41;
+}
+.content__analytic_subtitle span {
+    text-decoration-line: underline;
+}
+.why_column {
+    display: flex;
+}
+.content__why_item {
+    margin-left: 2.857rem;
+    margin-top: auto;
+}
+.why__item_price {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.571rem;
+    text-align: center;
+    color: #214E41;
+}
+.why__item_height {
+    width: 5.571rem;
+    background: #43806C;
+}
+.why__item_title {
+    margin-top: 1.429rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height: 1.571rem;
+    text-align: center;
+    color: #214E41;
+}
+.height__deductible {
+    height: 10.714rem;
+}
+.height__anual {
+    height: 21.429rem;
+}
+
+/* Секция Customize */
+.content__customize {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8.571rem;
+}
+.customize__item_custom {
+    width: 45%;
+    background: #E3EEED;
+    height: 50.357rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.071rem;
+}
+.customize__item_description {
+    width: 55%;
+    height: 50.357rem;
+    background: #214E41;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.071rem;
+}
+.item__custom_author {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.929rem;
+    line-height: 1.429rem;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #214E41;
+}
+.item__custom_link {
+    margin-top: 1.286rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.286rem;
+    line-height: 3rem;
+    color: #43806C;
+    cursor: pointer;
+}
+.item__custom_link:hover {
+    opacity: .8;
+}
+.item__custom_link.link_active {
+    font-weight: 700;
+    color: #214E41;
+}
+
+.item_description {
+    max-width: 34.857rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.429rem;
+    line-height: 2.429rem;
+    letter-spacing: 0.02px;
+    color: #FFFFFF;
+}
+
+/* Секция Rating */
+
+/* Секция Brokers */
+
+/* Секция Slider */
+
+/* Секция About */
+
+/* Секция Blog */
+
+/* Футер */

@@ -393,6 +393,81 @@ h2, h3 {
 }
 
 /* Секция Rating */
+.content__rating {
+    display: flex;
+    flex-direction: column;
+}
+.raiting__column {
+    margin-top: 8.571rem;
+}
+.raiting__container_main {
+    max-width: 85.071rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 1.071rem;
+}
+.raiting__container_phone {
+    max-width: 75.357rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.071rem;
+}
+.raiting__main_slogan {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height: 1.429rem;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #43806C;
+}
+.raiting__main_title {
+    max-width: 39.714rem;
+    margin-top: 1.429rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.571rem;
+    line-height: 3.286rem;
+    color: #214E41;
+}
+.raiting__main_subtitle {
+    max-width: 39.357rem;
+    margin-top: 2.429rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.286rem;
+    line-height: 2.143rem;
+    letter-spacing: 0.02px;
+    color: #757575;
+}
+.raiting__item_title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.286rem;
+    line-height: 5.571rem;
+    color: #F0A446;
+    text-transform: uppercase;
+}
+.raiting__item_subtitle {
+    max-width: 17.071rem;
+    margin-top: 0.929rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.929rem;
+    line-height: 1.571rem;
+    letter-spacing: 0.02px;
+    color: #214E41;
+}
+
 
 /* Секция Brokers */
 
@@ -401,5 +476,6 @@ h2, h3 {
 /* Секция About */
 
 /* Секция Blog */
+
 
 /* Футер */

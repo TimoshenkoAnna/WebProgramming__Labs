@@ -168,7 +168,25 @@
                     <p class="raiting__main_subtitle">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
                     <p class="content__why_link">Learn More</p>
                 </div>
-            </section>           
+            </section>
+            <section class="content__slider">
+                <div class="slider__container">
+                    <h3 class="slider__title">Proudly backed by</h3>
+                    <div class="slider">
+                        <span>←</span>
+                        <div class="slider__content" >
+                            <div class="slider__container_img">
+                                <img src="img/01.png" class="slider_item">
+                                <img src="img/02.png" class="slider_item">
+                                <img src="img/03.png" class="slider_item">
+                                <img src="img/04.png" class="slider_item">
+                                <img src="img/05.png" class="slider_item">
+                            </div>
+                        </div>
+                        <span>→</span>
+                    </div>
+                </div>
+            </section>
         </main>
 </body>
 </html>

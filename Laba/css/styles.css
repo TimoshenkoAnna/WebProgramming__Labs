@@ -468,8 +468,21 @@ h2, h3 {
     color: #214E41;
 }
 
-
 /* Секция Brokers */
+.content__brokers {
+    background: url('../img/brokers_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 37.286rem;
+}
+.brokers__container {
+    max-width: 83.5rem;
+    margin: 0 auto;
+    padding-top: 9rem;
+    padding-left: 1.071rem;
+    padding-right: 1.071rem;
+}
 
 /* Секция Slider */
 
@@ -479,3 +492,4 @@ h2, h3 {
 
 
 /* Футер */
+

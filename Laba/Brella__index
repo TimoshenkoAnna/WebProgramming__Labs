@@ -114,8 +114,8 @@
                 </div>
             </section>
             <section class="content__rating">
-                            <div class="raiting__column">
-                                <div class="raiting__container_main">
+                    <div class="raiting__column">
+                            <div class="raiting__container_main">
                                     <div class="raiting__body">
                                         <span class="raiting__main_slogan">one plan, more coverage</span>
                                         <h3 class="raiting__main_title">No one can predict which health issues might come their way.</h3>
@@ -160,7 +160,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
+            </section>
+             <section class="content__brokers">
+                <div class="brokers__container">
+                    <span class="raiting__main_slogan">for employers</span>
+                    <h3 class="raiting__main_title">Easy enrollment meets simple administration.</h3>
+                    <p class="raiting__main_subtitle">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
+                    <p class="content__why_link">Learn More</p>
+                </div>
+            </section>           
         </main>
 </body>
 </html>

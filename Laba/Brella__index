@@ -113,6 +113,54 @@
                     </p>
                 </div>
             </section>
+            <section class="content__rating">
+                            <div class="raiting__column">
+                                <div class="raiting__container_main">
+                                    <div class="raiting__body">
+                                        <span class="raiting__main_slogan">one plan, more coverage</span>
+                                        <h3 class="raiting__main_title">No one can predict which health issues might come their way.</h3>
+                                        <p class="raiting__main_subtitle">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.
+                                        </p>
+                                    </div>
+                                    <div class="raiting__main_image">
+                                        <img src="img/raiting_img.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="raiting__column">
+                                <div class="raiting__container_main">
+                                    <div class="raiting__item">
+                                        <h2 class="raiting__item_title">5k</h2>
+                                        <p class="raiting__item_subtitle">covered injuries and illnesses from fractures and appendicitis to cancer</p>
+                                    </div>
+                                    <div class="raiting__item">
+                                        <h2 class="raiting__item_title">1x</h2>
+                                        <p class="raiting__item_subtitle">more covered conditions than Accident and Critical Illness plans—combined</p>
+                                    </div>
+                                    <div class="raiting__item">
+                                        <h2 class="raiting__item_title">40%</h2>
+                                        <p class="raiting__item_subtitle">plans are 100% guaranteed issue. No medical underwriting required</p>
+                                    </div>
+                                    <div class="raiting__item">
+                                        <h2 class="raiting__item_title">0</h2>
+                                        <p class="raiting__item_subtitle">Zero limitations or exclusions for pre-existing conditions</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="raiting__column">
+                                <div class="raiting__container_phone">
+                                    <div class="raiting__phone">
+                                        <img src="img/phone.png">
+                                    </div>
+                                    <div class="raiting__phone_text">
+                                        <span class="raiting__main_slogan">a better claims experience</span>
+                                        <h3 class="raiting__main_title">Give your people a plan that pays in hours—not weeks.</h3>
+                                        <p class="raiting__main_subtitle">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
+                                        <p class="content__why_link">Play Video</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
         </main>
 </body>
 </html>

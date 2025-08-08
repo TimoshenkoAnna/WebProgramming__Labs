@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </section>
-<section class="content__about">
+            <section class="content__about">
                 <div class="about__container">
                     <div class="about__item">
                         <a><img src="img/1.jpg" class="about__item_img"></a>
@@ -206,6 +206,64 @@
                     </div>
                 </div>
             </section>
+            <section class="content__blog">
+                <div class="blog__column_photo"></div>
+                <div class="blog__column_content">
+                    <h2 class="blog__content_title">Ready to explore Brella’s supplemental health solution?</h2>
+                    <h2 class="blog__content_subtitle">Let’s talk.</h2>
+                    <button class="blog__content_button">Get in touch</button>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__links">
+                    <a href="Brella__index.html" class="footer__logo">Brella</a>
+                    <ul class="footer__links_ul">
+                        <li><p class="footer__link_active">Join Brella</p></li>
+                        <li><a class="footer__link">Our Plan</a></li>
+                        <li><a class="footer__link">Employers</a></li>
+                        <li><a class="footer__link">Brokers</a></li>
+                        <li><a class="footer__link">Members</a></li>
+                    </ul>
+                    <ul class="footer__links_ul">
+                        <li><p class="footer__link_active">Company</p></li>
+                        <li><a class="footer__link">About</a></li>
+                        <li><a class="footer__link">Blog</a></li>
+                        <li><a class="footer__link">Careers</a></li>
+                        <li><a class="footer__link">Contact</a></li>
+                    </ul>
+                    <div class="footer__inputs">
+                        <div class="footer__inputs_title">Get the latest</div>
+                        <div class="footer__inputs_subtitle">Sign up to receive benefits news and insights in your inbox once a month.</div>
+                        <div class="footer_input">
+                            <input type="text" placeholder="Email*">
+                            <button>→</button>
+                        </div>
+                        <div class="social_links">
+                            <a><img src="img/social1.svg"></a>
+                            <a><img src="img/social2.svg"></a>
+                            <a><img src="img/social3.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__text">
+                    <p class="footer__text_1">
+                        Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.
+                        <br><br>
+                        Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX
+                        <br><br>
+                        Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at (844) 987-1070
+                    </p>
+                    <div class="footer__bottom_link">
+                        <p class="footer__text_2">© 2021 Brella Insurance Inc. All Rights Reserved.</p>
+                        <p class="footer__link_licenze">
+                            <a>Privacy</a>
+                            <a>Terms of Service</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>

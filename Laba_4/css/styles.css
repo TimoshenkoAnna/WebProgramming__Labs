@@ -1044,10 +1044,10 @@ h2, h3 {
     }
     .slider__container_img {
         width: auto;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 2rem;
         margin: 0;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     .slider__container_img img {
         margin: 0;
@@ -1079,5 +1079,153 @@ h2, h3 {
     }
     .footer__text_1 {
         text-align: center;
+    }
+}
+
+/* Mobile - 480px и меньше */
+@media (max-width: 480px) {
+    /* Навигация */
+    .nav__container {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    /* Хедер */
+    .header__block {
+        margin-top: 4rem;
+    }
+    .header__block h2 {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+    .header__block p {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    .header__inputs {
+        flex-direction: column;
+        align-items: stretch;
+        width: 90%;
+    }
+    .header__inputs input, .header__inputs button {
+        width: 100%;
+        border-radius: 0.429rem;
+    }
+    .header__inputs button {
+        margin-top: 0.5rem;
+        height: 4.286rem;
+        font-size: 1rem;
+    }
+    .header__item_title {
+        font-size: 1rem;
+    }
+    .header__item_subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Секция Why */
+    .content__why {
+        margin-top: 4rem; 
+    }
+    .content__why_title {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .content__analytic_title {
+        font-size: 4rem;
+    }
+    .why_column {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .content__why_item {
+        margin-left: 0;
+    }
+    
+    /* Секция Customize */
+    .item__custom_link {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+    }
+
+    /* Секция Rating */
+    .raiting__main_title {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+    .raiting__main_subtitle {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+    .raiting__item {
+        width: 100%;
+    }
+
+    /*БЛОК ДЛЯ СЛАЙДЕРА*/
+    /* Секция Slider */
+    .slider__container {
+        padding-bottom: 4rem;
+    }
+
+    .slider span {
+        display: none;
+    }
+
+    .slider__content {
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .slider__content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider__container_img {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        width: max-content;
+        gap: 50px;
+        padding: 0 20px;
+    }
+
+    .slider__container_img img {
+        margin: 0;
+    }
+
+    /* Секция About */
+    .about__container {
+        gap: 2rem;
+    }
+    .about__item {
+        width: 100%;
+        margin: 0;
+    }
+    .about__item_subtitle {
+        font-size: 1.2rem;
+    }
+    
+    /* Секция Blog */
+    .blog__column_content {
+        padding: 3rem 1rem;
+        min-height: auto;
+    }
+    .blog__column_photo {
+        height: 250px;
+    }
+    .blog__content_title, .blog__content_subtitle {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    
+    /* Футер */
+    .footer__link_licenze a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .footer__link_licenze a:first-child {
+        border-right: none;
+        padding-right: 0;
     }
 }

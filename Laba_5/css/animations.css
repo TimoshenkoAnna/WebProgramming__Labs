@@ -1,0 +1,169 @@
+/*         СТИЛИ ДЛЯ ЛАБОРАТОРНОЙ РАБОТЫ №5 (АНИМАЦИИ И ПСЕВДОЭЛЕМЕНТЫ)             */
+
+/* --- Псевдоэлементы --- */
+
+/* Псевдоэлемент 1: ::selection */
+::selection {
+    background-color: #F0A446;
+    color: #214E41;
+}
+
+/* Псевдоэлемент 2: ::placeholder */
+::placeholder {
+    color: #9ab3ac;
+    opacity: 1;
+}
+
+/* Псевдоэлемент 3: ::after */
+.link__item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F0A446;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Псевдоэлемент 4: ::before */
+.link__button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+    transform: translateX(-150%) skewX(-30deg);
+}
+.content__why_link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: #F0A446;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: -1;
+}
+.raiting__item_title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #43806C;
+    overflow: hidden;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Псевдоэлемент 5: ::first-line */
+.item_description::first-line {
+    font-weight: 700;
+}
+
+/* Псевдоэлемент 6: ::-webkit-scrollbar (из блока адаптации) */
+@media (max-width: 480px) {
+    .slider__content::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* --- Псевдоклассы --- */
+
+/* Псевдокласс 1: :hover */
+.logo:hover { transform: scale(1.05); }
+.link__item:hover { color: #43806C; }
+.link__item:hover::after { transform: scaleX(1); transform-origin: left; }
+.link__button:hover { background-color: #366a58; }
+.link__button:hover::before { animation: shiny-effect 1s ease-in-out; }
+.header__inputs button:hover { background-color: #214E41; }
+.header__item:hover .header__item_img { animation: tada 1s ease; }
+.content__why_link:hover { color: #fff; }
+.content__why_link:hover::before { transform: scaleY(1); }
+.content__why_item:hover .why__item_height { animation: bar-grow 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.item__custom_link:hover { color: #214E41; letter-spacing: 1px; }
+.raiting__item:hover .raiting__item_title::before { width: 100%; }
+.raiting__container_phone:hover .raiting__phone img { transform: perspective(1000px) rotateY(-5deg) scale(1.02); }
+.slider_item:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
+.slider span:first-child:hover { transform: translateX(-5px); color: #F0A446; }
+.slider span:last-child:hover { transform: translateX(5px); color: #F0A446; }
+.about__item:hover { transform: rotateY(10deg) rotateX(5deg) scale(1.05); box-shadow: 0 20px 40px rgba(33, 78, 65, 0.2); }
+.about__item:hover .about__item_img { transform: scale(1.1); }
+.blog__content_button:hover { animation-play-state: paused; background: #214E41; }
+.footer__logo:hover { color: #F0A446; }
+.footer__link:hover { color: #F0A446; padding-left: 5px; }
+.footer_input button:hover { background-color: #F0A446; color: #fff; }
+.social_links a:hover img { animation: icon-jump 0.5s ease; filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3)); }
+.footer__link_licenze a:hover { color: #F0A446; }
+
+/* Псевдокласс 2: :active */
+.link__button:active { transform: scale(0.98); }
+
+/* Псевдокласс 3: :focus */
+.header__inputs input:focus { outline: none; border-color: #43806C; box-shadow: 0 0 10px rgba(67, 128, 108, 0.5); }
+.footer_input input:focus { outline: none; border-color: #F0A446; box-shadow: 0 0 5px #F0A446; }
+
+/* Псевдокласс 4: :nth-child() */
+.raiting__item:nth-child(even):hover .raiting__item_title::before { transition-delay: 0.1s; }
+
+/* Псевдокласс 5: :first-child */
+.slider span:first-child { margin-right: 57px; }
+.footer__link_licenze a:first-child { border-right: 1px solid #fff; padding-right: 11px; }
+@media (max-width: 480px) { .footer__link_licenze a:first-child { border-right: none; padding-right: 0; } }
+
+/* Псевдокласс 6: :last-child */
+.slider span:last-child { margin-left: 57px; }
+
+/* Псевдокласс 7: :not() */
+.footer__links_ul li:not(:first-child) { margin-top: 17px; }
+.social_links a:not(:first-child) { margin-left: 29px; }
+
+
+/* --- Анимации, Переходы и Трансформации --- */
+
+/* Анимации (@keyframes) */
+@keyframes shiny-effect { 0% { transform: translateX(-150%) skewX(-30deg); } 100% { transform: translateX(150%) skewX(-30deg); } }
+@keyframes tada { 0% {transform: scale(1);} 10%, 20% {transform: scale(0.9) rotate(-3deg);} 30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 100% {transform: scale(1) rotate(0);} }
+@keyframes animated-gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+@keyframes bar-grow { 0% { transform: scaleY(0); } 80% { transform: scaleY(1.1); } 100% { transform: scaleY(1); } }
+@keyframes float-image { 0% { transform: translateY(0); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0); } }
+@keyframes button-pulse { 0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(67, 128, 108, 0.7); } 70% { transform: scale(1.02); box-shadow: 0 0 0 15px rgba(67, 128, 108, 0); } 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(67, 128, 108, 0); } }
+@keyframes icon-jump { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* Применение анимаций и переходов (transition) */
+.logo { transition: transform 0.3s ease-in-out; }
+.link__item { transition: color 0.3s ease; }
+.link__button { position: relative; overflow: hidden; transition: background-color 0.3s ease; }
+.header__inputs input { transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; }
+.header__inputs button { transition: background-color 0.3s; }
+.content__why_title { background: linear-gradient(90deg, #214E41, #43806C, #214E41); background-size: 200% auto; color: transparent; -webkit-background-clip: text; background-clip: text; animation: animated-gradient 6s ease-in-out infinite; }
+.content__why_link { transition: color 0.4s ease; }
+.raiting__main_image img { animation: float-image 6s ease-in-out infinite; }
+.blog__content_button { animation: button-pulse 2.5s infinite; }
+.item__custom_link { transition: color 0.3s ease, letter-spacing 0.3s ease; }
+.raiting__phone img { transition: transform 0.4s ease-out; }
+.slider_item { filter: grayscale(100%); opacity: 0.7; transition: filter 0.4s ease, opacity 0.4s ease, transform 0.4s ease; }
+.slider span { transition: transform 0.2s, color 0.2s; }
+.about__container { perspective: 1500px; }
+.about__item { transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease; }
+.about__item_img { transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.footer__logo { transition: color 0.3s; }
+.footer__link { transition: color 0.3s, padding-left 0.3s; }
+.footer_input input { transition: border-color 0.3s, box-shadow 0.3s; }
+.footer_input button { transition: background-color 0.3s, color 0.3s; }
+.social_links a img { transition: filter 0.3s ease; }
+.footer__link_licenze a { transition: color 0.3s; }
+
+/* Адаптация анимаций */
+@media (max-width: 768px) {
+    .about__container { perspective: none; }
+    .about__item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(33, 78, 65, 0.15); }
+}

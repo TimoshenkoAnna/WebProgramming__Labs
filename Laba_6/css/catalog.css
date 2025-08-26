@@ -1,0 +1,266 @@
+/* --- Стили для страницы каталога --- */
+.catalog-section {
+    padding: 80px 20px;
+    background-color: #fafafa;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.catalog-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 53px;
+    color: #214E41;
+    margin-bottom: 15px;
+}
+
+.catalog-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    color: #757575;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.catalog-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.plan-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(33, 78, 65, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(33, 78, 65, 0.15);
+}
+
+.plan-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.plan-card__content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.plan-card__category {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #43806C;
+    margin-bottom: 10px;
+}
+
+.plan-card__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 30px;
+    color: #214E41;
+    margin-bottom: 15px;
+}
+
+.plan-card__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #757575;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.plan-card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E3EEED;
+    padding-top: 20px;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.plan-card__coverage {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #214E41;
+}
+
+.plan-card__fee {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #43806C;
+}
+
+.plan-card__annual {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #214E41;
+}
+
+.plan-card__rating {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #F0A446;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+    .catalog-container {
+        grid-template-columns: 1fr;
+    }
+    .catalog-title {
+        font-size: 2rem;
+    }
+}
+
+/* --- Стили для панели управления каталогом --- */
+.catalog-controls {
+    max-width: 1240px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #43806C;
+    background-color: #fff;
+    border: 2px solid #E3EEED;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #E3EEED;
+    border-color: #43806C;
+}
+
+.control-btn.active {
+    background-color: #43806C;
+    color: #fff;
+    border-color: #43806C;
+}
+
+/* --- Стили для значка уровня (tier) --- */
+.plan-card__tier {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.plan-card__tier--gold { background-color: #D4AF37; }
+.plan-card__tier--silver { background-color: #A9A9A9; }
+.plan-card__tier--bronze { background-color: #CD7F32; }
+
+/* --- Стили для панели управления каталогом --- */
+.catalog-master-controls {
+    max-width: 1240px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(33, 78, 65, 0.07);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-group {
+    flex-grow: 1;
+    min-width: 250px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: 1px solid #E3EEED;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #43806C;
+    box-shadow: 0 0 0 3px rgba(67, 128, 108, 0.2);
+}
+
+.category-group, .sort-group {
+    min-width: 220px;
+}
+
+.sort-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #214E41;
+}
+
+.sort-select, .category-select {
+    padding: 12px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #E3EEED;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sort-select:focus, .category-select:focus {
+    outline: none;
+    border-color: #43806C;
+}
+
+.not-found-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 80px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #757575;
+}

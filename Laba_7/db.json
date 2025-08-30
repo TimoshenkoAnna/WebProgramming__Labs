@@ -1,0 +1,278 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Basic Shield",
+      "type": "Individual",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 25,
+      "description": "Covers essential risks like fractures and minor injuries. A great start for your safety.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Basic+Shield",
+      "coverage": 5000,
+      "tier": "bronze",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "name": "Family Standard",
+      "type": "Family",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 70,
+      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
+      "coverage": 15000,
+      "tier": "silver",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "size": "Large",
+      "colors": [
+        "Silver"
+      ],
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Injury Guard",
+      "type": "Individual",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 45,
+      "description": "A specialized plan for athletes and individuals with an active lifestyle.",
+      "image": "https://placehold.co/600x400/F0A446/214E41?text=Injury+Guard",
+      "coverage": 12000,
+      "tier": "silver",
+      "rating": 4.8
+    },
+    {
+      "id": 5,
+      "name": "Total Coverage",
+      "type": "Individual",
+      "size": "Large",
+      "colors": [
+        "Gold"
+      ],
+      "price": 120,
+      "description": "Maximum protection against a wide range of illnesses and accidents. Your peace of mind.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Total+Coverage",
+      "coverage": 50000,
+      "tier": "gold",
+      "rating": 4.7
+    },
+    {
+      "id": 6,
+      "name": "Kids Plan",
+      "type": "Family",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 35,
+      "description": "Take care of what matters most. Covers everything from scrapes to serious childhood illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Kids+Plan",
+      "coverage": 10000,
+      "tier": "bronze",
+      "rating": 4.3
+    },
+    {
+      "id": 7,
+      "name": "Business Premium",
+      "type": "Corporate",
+      "size": "Extra Large",
+      "colors": [
+        "Gold"
+      ],
+      "price": 250,
+      "description": "The best solution for top management and key employees. Includes concierge service.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Business+Premium",
+      "coverage": 100000,
+      "tier": "gold",
+      "rating": 4.9
+    },
+    {
+      "id": 8,
+      "name": "Easy Start",
+      "type": "Individual",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 15,
+      "description": "An affordable plan for students and young adults. Covers the most frequent doctor visits.",
+      "image": "https://placehold.co/600x400/F0A446/214E41?text=Easy+Start",
+      "coverage": 3000,
+      "tier": "bronze",
+      "rating": 3.9
+    },
+    {
+      "id": 9,
+      "name": "Parent Care",
+      "type": "Family",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 95,
+      "description": "A specialized plan for the elderly, covering chronic conditions.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Parent+Care",
+      "coverage": 20000,
+      "tier": "silver",
+      "rating": 4.1
+    },
+    {
+      "id": 10,
+      "name": "IT Professional",
+      "type": "Corporate",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 60,
+      "description": "A plan for IT professionals covering risks associated with a sedentary lifestyle.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=IT+Professional",
+      "coverage": 18000,
+      "tier": "silver",
+      "rating": 4.4
+    },
+    {
+      "id": 11,
+      "name": "Critical Illness",
+      "type": "Individual",
+      "size": "Large",
+      "colors": [
+        "Gold"
+      ],
+      "price": 150,
+      "description": "Focuses on covering expenses upon diagnosis of serious conditions like cancer or heart attack.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Critical+Illness",
+      "coverage": 75000,
+      "tier": "gold",
+      "rating": 4.6
+    },
+    {
+      "id": 12,
+      "name": "Family Maximum",
+      "type": "Family",
+      "size": "Large",
+      "colors": [
+        "Gold"
+      ],
+      "price": 130,
+      "description": "All the benefits of the 'Family Standard' plan with double the coverage and additional options.",
+      "image": "https://placehold.co/600x400/F0A446/214E41?text=Family+Maximum",
+      "coverage": 30000,
+      "tier": "gold",
+      "rating": 4.7
+    },
+    {
+      "id": 13,
+      "name": "Startup Package",
+      "type": "Corporate",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 40,
+      "description": "A flexible and scalable plan for growing companies and startups. From 3 employees.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Startup+Package",
+      "coverage": 10000,
+      "tier": "bronze",
+      "rating": 4
+    },
+    {
+      "id": 14,
+      "name": "Traveler",
+      "type": "Individual",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 30,
+      "description": "Covers emergency medical care and injuries during domestic travel. Not a substitute for international travel insurance.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Traveler",
+      "coverage": 8000,
+      "tier": "bronze",
+      "rating": 4.2
+    },
+    {
+      "id": 15,
+      "name": "Women's Health",
+      "type": "Individual",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 85,
+      "description": "A specialized plan covering risks related to women's health and pregnancy.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Women's+Health",
+      "coverage": 22000,
+      "tier": "silver",
+      "rating": 4.5
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2,
+      "name": "Family Standard",
+      "type": "Family",
+      "size": "Medium",
+      "colors": [
+        "Silver"
+      ],
+      "price": 70,
+      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
+      "coverage": 15000,
+      "tier": "silver",
+      "rating": 4.5
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Basic Shield",
+      "type": "Individual",
+      "size": "Small",
+      "colors": [
+        "Bronze"
+      ],
+      "price": 25,
+      "description": "Covers essential risks like fractures and minor injuries. A great start for your safety.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Basic+Shield",
+      "coverage": 5000,
+      "tier": "bronze",
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "size": "Large",
+      "colors": [
+        "Silver"
+      ],
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4
+    }
+  ]
+}

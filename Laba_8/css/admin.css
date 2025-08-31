@@ -1,0 +1,98 @@
+.admin-panel-container {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.admin-panel-container h1 {
+    text-align: center;
+    color: #214E41;
+    margin-bottom: 40px;
+}
+
+.admin-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(33, 78, 65, 0.07);
+    margin-bottom: 40px;
+}
+
+.admin-section h2 {
+    color: #214E41;
+    border-bottom: 2px solid #E3EEED;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.admin-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Стили для полей и ошибок валидации*/
+.form-group { position: relative; }
+.form-group label { font-weight: 600; color: #214E41; display: block; margin-bottom: 8px; }
+.form-group .required { color: #c94c4c; margin-left: 4px; }
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%; padding: 10px; font-size: 15px; border: 1px solid #E3EEED; border-radius: 5px; box-sizing: border-box;
+}
+.error-message { color: #c94c4c; font-size: 13px; padding-top: 5px; min-height: 18px; }
+input.invalid, textarea.invalid { border-color: #c94c4c; }
+
+.form-actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+.form-actions button, #reset-filters-btn {
+    padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: 700; transition: background-color 0.3s;
+}
+#save-plan-btn { background-color: #43806C; color: #fff; }
+#save-plan-btn:disabled { background-color: #ccc; cursor: not-allowed; }
+#clear-form-btn, #reset-filters-btn { background-color: #757575; color: #fff; }
+
+
+/* Таблицы */
+.admin-table-container { overflow-x: auto; }
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th, .admin-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #E3EEED; }
+.admin-table th { background-color: #fafafa; font-weight: 700; color: #214E41; }
+.admin-table .comment-col { min-width: 250px; }
+.admin-table .action-btn {
+    padding: 6px 10px; margin-right: 5px; border: none; border-radius: 4px; color: #fff; cursor: pointer;
+}
+.edit-btn { background-color: #4a90e2; }
+.delete-btn { background-color: #c94c4c; }
+
+/* Фильтры */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.access-denied-container { text-align: center; margin-top: 100px; padding: 40px; }
+
+@media (max-width: 1200px) {
+    .section-content { grid-template-columns: 1fr; }
+    .admin-form { margin-bottom: 40px; }
+}
+
+@media (max-width: 768px) {
+    .admin-form .form-grid { grid-template-columns: 1fr; }
+    .filters { flex-direction: column; align-items: stretch; }
+}

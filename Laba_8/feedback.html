@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Feedback - Brella</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900" rel="stylesheet" />
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="nav__container">
+                <a href="Brella__index.html" class="logo"><img src="img/Frame.png"></a>
+                <div class="links" id="nav-links">
+                    <li><a href="catalog.html" class="link__item">Our Plan</a></li>
+                    <li><a href="favorites.html" class="link__item">Favorites</a></li>
+                    <li><a href="cart.html" class="link__item">Cart</a></li>
+                    <li><a href="register.html" class="link__item">Register</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="feedback-section">
+            <div id="feedback-container" class="feedback-container">
+                <h2>Leave Your Feedback</h2>
+                <p>Share your experience with our plans.</p>
+                
+                <form id="feedback-form" novalidate>
+                    <div class="form-group">
+                        <label for="plan-select">Select a purchased plan<span class="required">*</span></label>
+                        <select id="plan-select" name="planId" required>
+                            <option value="">Loading your purchased plans...</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Rating<span class="required">*</span></label>
+                        <div class="star-rating" id="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+                        </div>
+                        <div class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-text">Your Review<span class="required">*</span></label>
+                        <textarea id="review-text" name="comment" rows="5" required></textarea>
+                        <div class="char-counter" id="char-counter">0 / 25</div>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <button type="submit" id="submit-feedback-btn" disabled>Submit Feedback</button>
+
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+             <div id="admin-message" class="admin-message" style="display: none;">
+                <h2>Access Denied</h2>
+                <p>Administrators are not able to leave feedback.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="Brella__index.html" class="footer__logo">Brella</a>
+                <ul class="footer__links_ul">
+                    <li><p class="footer__link_active">Join Brella</p></li>
+                    <li><a class="footer__link">Our Plan</a></li>
+                    <li><a class="footer__link">Employers</a></li>
+                    <li><a class="footer__link">Brokers</a></li>
+                    <li><a class="footer__link">Members</a></li>
+                </ul>
+                <ul class="footer__links_ul">
+                    <li><p class="footer__link_active">Company</p></li>
+                    <li><a class="footer__link">About</a></li>
+                    <li><a class="footer__link">Blog</a></li>
+                    <li><a class="footer__link">Careers</a></li>
+                    <li><a class="footer__link">Contact</a></li>
+                </ul>
+                <div class="footer__inputs">
+                    <div class="footer__inputs_title">Get the latest</div>
+                    <div class="footer__inputs_subtitle">Sign up to receive benefits news and insights in your inbox once a month.</div>
+                    <div class="footer_input">
+                        <input type="text" placeholder="Email*">
+                        <button>→</button>
+                    </div>
+                    <div class="social_links">
+                        <a><img src="img/social1.svg"></a>
+                        <a><img src="img/social2.svg"></a>
+                        <a><img src="img/social3.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text">
+                <p class="footer__text_1">
+                    Brella is a limited benefit policy; it is not a substitute for health insurance. The information provided on this website is illustrative only. A complete description of benefits, limitations, and exclusions are provided in your certificate of Insurance and applicable Riders. For a summary of limitations and exclusions, see our FAQ. Payout values listed do not guarantee an amount to be paid for listed conditions. Product not available in all states. All coverage is subject to the terms and conditions of the master group policy.
+                    <br><br>
+                    Brella is underwritten by Greenhouse Life Insurance Company (NAIC 80055). Form No. PFSB11-TX
+                    <br><br>
+                    Reach us by mail at 2093 Philadelphia Pike #2496, Claymont, DE 19703 and by phone at (844) 987-1070
+                </p>
+                <div class="footer__bottom_link">
+                    <p class="footer__text_2">© 2021 Brella Insurance Inc. All Rights Reserved.</p>
+                    <p class="footer__link_licenze">
+                        <a>Privacy</a>
+                        <a>Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+    <script src="js/main.js"></script> 
+</body>
+
+</html>

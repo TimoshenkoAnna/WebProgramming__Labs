@@ -1,0 +1,102 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Basic Shield",
+      "type": "Individual",
+      "price": 25,
+      "description": "Covers essential risks like fractures and minor injuries. A great start for your safety.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Basic+Shield",
+      "coverage": 5000,
+      "tier": "bronze",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "name": "Family Standard",
+      "type": "Family",
+      "price": 70,
+      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
+      "coverage": 15000,
+      "tier": "silver",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4
+    }
+  ],
+  "favorites": [],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Basic Shield",
+      "type": "Individual",
+      "price": 25,
+      "description": "Covers essential risks like fractures and minor injuries. A great start for your safety.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Basic+Shield",
+      "coverage": 5000,
+      "tier": "bronze",
+      "rating": 4.2,
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4,
+      "quantity": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nickname": "AdminUser123",
+      "email": "admin@example.com",
+      "phone": "+375 (29) 123-45-67",
+      "dob": "1990-01-01",
+      "firstName": "Admin",
+      "lastName": "Brella",
+      "password": "hashed_password_example",
+      "role": "admin"
+    },
+    {
+      "lastName": "Иванов",
+      "firstName": "Иван",
+      "middleName": "Иванович",
+      "dob": "2001-06-13",
+      "email": "1@gmail.com",
+      "phone": "+375 (33) 346-87-12",
+      "nickname": "ИваИва532",
+      "password": "Autoohsphisuzs!1",
+      "role": "customer",
+      "id": 2
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "planId": 1,
+      "userId": 1,
+      "nickname": "AdminUser123",
+      "rating": 5,
+      "comment": "Excellent basic plan! Very affordable.",
+      "date": "2025-08-29T10:00:00.000Z",
+      "status": "approved"
+    }
+  ],
+  "orders": []
+}

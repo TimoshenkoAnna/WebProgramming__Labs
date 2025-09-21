@@ -1,0 +1,402 @@
+/* ОБЩИЕ СТИЛИ ДЛЯ СТРАНИЦЫ КАТАЛОГА */
+.catalog-section {
+    padding: 40px 15px;
+    background-color: #fafafa;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #214E41;
+    margin-bottom: 15px;
+}
+
+.catalog-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #757575;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* КОНТЕЙНЕР С КАРТОЧКАМИ ПЛАНОВ */
+.catalog-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* ПАНЕЛЬ УПРАВЛЕНИЯ И ФИЛЬТРЫ */
+.catalog-master-controls {
+    max-width: 1240px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(33, 78, 65, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.sort-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #214E41;
+    align-self: flex-start;
+}
+
+.search-input,
+.sort-select,
+.category-select {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border: 1px solid #E3EEED;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.search-input:focus,
+.sort-select:focus,
+.category-select:focus {
+    outline: none;
+    border-color: #43806C;
+    box-shadow: 0 0 0 3px rgba(67, 128, 108, 0.2);
+}
+
+.filters-bottom-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.filter-range-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-range-group label {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: #214E41;
+}
+
+.filter-range-group input[type="number"] {
+    padding: 12px 15px;
+    border: 1px solid #E3EEED;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.control-btn {
+    flex-grow: 1;
+    padding: 12px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #43806C;
+    background-color: #fff;
+    border: 2px solid #E3EEED;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+    background-color: #E3EEED;
+    border-color: #43806C;
+}
+
+#btn-apply-filters {
+    background-color: #43806C;
+    color: #fff;
+    border-color: #43806C;
+}
+
+#btn-apply-filters:hover {
+    background-color: #214E41;
+    border-color: #214E41;
+}
+
+
+/* СТИЛИ КАРТОЧКИ ПЛАНА */
+.plan-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(33, 78, 65, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(33, 78, 65, 0.15);
+}
+
+.plan-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.plan-card__content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.plan-card__category {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #43806C;
+    margin-bottom: 10px;
+}
+
+.plan-card__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    color: #214E41;
+    margin-bottom: 15px;
+}
+
+.plan-card__description {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #757575;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.plan-card__footer {
+    border-top: 1px solid #E3EEED;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.plan-card__details, .plan-card__prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan-card__coverage, .plan-card__fee, .plan-card__annual, .plan-card__rating {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #214E41;
+}
+
+.plan-card__fee {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #43806C;
+}
+
+.plan-card__rating {
+    color: #F0A446;
+}
+
+.plan-card__tier {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 2;
+}
+.plan-card__tier--gold { background-color: #D4AF37; }
+.plan-card__tier--silver { background-color: #A9A9A9; }
+.plan-card__tier--bronze { background-color: #CD7F32; }
+
+.plan-card__actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.add-to-favorites, .add-to-cart {
+    padding: 10px 15px;
+    border: 2px solid #214E41;
+    background-color: transparent;
+    color: #214E41;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+}
+
+.add-to-favorites:hover, .add-to-cart:hover {
+    background-color: #214E41;
+    color: #fff;
+}
+
+
+/* ПАГИНАЦИЯ */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border: 2px solid #214E41;
+    background-color: #fff;
+    color: #214E41;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pagination button:hover {
+    background-color: #214E41;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.pagination button.active {
+    background-color: #214E41;
+    color: #fff;
+    border-color: #214E41;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    border-color: #ccc;
+    color: #757575;
+}
+
+
+/* СООБЩЕНИЕ "НИЧЕГО НЕ НАЙДЕНО" */
+.not-found-message {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+.not-found-message h3 {
+    color: #214E41;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+/* АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ (768px и больше) */
+@media (min-width: 768px) {
+    .catalog-section {
+        padding: 80px 20px;
+    }
+
+    .catalog-title {
+        font-size: 2.5rem;
+    }
+    
+    .catalog-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog-master-controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+
+    .control-group {
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+    .search-group {
+      min-width: 250px;
+    }
+    
+    .category-group, .sort-group {
+      min-width: 220px;
+      flex-grow: 0;
+    }
+
+    .filters-bottom-row {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .filter-range-group {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .action-buttons {
+        margin-left: auto;
+        width: auto;
+    }
+}
+
+/* АДАПТАЦИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ (992px и больше) */
+@media (min-width: 992px) {
+    .catalog-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}

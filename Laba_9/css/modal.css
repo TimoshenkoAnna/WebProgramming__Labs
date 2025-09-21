@@ -1,0 +1,74 @@
+/* ================================================================== */
+/*          ЭТАЛОННЫЕ СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА                       */
+/* ================================================================== */
+
+.modal {
+    /* Расположение и фон */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+    z-index: 1000; /* Должен быть поверх всех остальных элементов */
+
+    /* Центрирование контента внутри */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* По умолчанию окно полностью скрыто */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Плавный переход для появления */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* КЛЮЧЕВОЙ МОМЕНТ: Класс, который делает окно видимым */
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Контентная часть (белый блок) */
+.modal__content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    
+    /* Анимация "приближения" контента */
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+/* Когда окно активно, контент "приближается" к нормальному размеру */
+.modal.active .modal__content {
+    transform: scale(1);
+}
+
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #214E41;
+    margin: 0 0 20px;
+    padding-right: 30px; /* Чтобы текст не заезжал под крестик */
+}

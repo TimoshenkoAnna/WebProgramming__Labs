@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Brella</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="nav__container">
+                <a href="Brella__index.html" class="logo"><img src="img/Frame.png"></a>
+                <div class="links" id="nav-links">
+                    <li><a href="catalog.html" class="link__item">Our Plan</a></li>
+                    <li><a href="favorites.html" class="link__item">Favorites</a></li>
+                    <li><a href="cart.html" class="link__item">Cart</a></li>
+                    <li><a href="register.html" class="link__item">Register</a></li>
+                    <li><a href="feedback.html" class="link__item">Feedback</a></li>
+                    <li><a href="admin.html" id="admin-link" class="link__item" style="display: none; color: #F0A446; font-weight: bold;">Admin Panel</a></li>
+                </div>
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content">
+        <div id="admin-access-denied" class="access-denied-container" style="display: none;">
+            <h2>Access Denied</h2>
+            <p>You do not have permission to view this page.</p>
+        </div>
+
+        <div id="admin-panel-container" class="admin-panel-container" style="display: none;">
+            <h1>Brella Admin Panel</h1>
+
+            <section class="admin-section">
+                <h2>Manage Plans</h2>
+                <div class="section-content">
+
+                    <button id="add-plan-modal-btn" class="blog__content_button" style="margin-bottom: 20px;">Add New Plan</button>
+
+                    <div class="admin-table-container">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="plans-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Manage Feedback</h2>
+                 <div class="filters">
+                    <div class="form-group">
+                        <label for="filter-by-plan">Filter by Plan</label>
+                        <select id="filter-by-plan">
+                            <option value="">All Plans</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="filter-by-user">Filter by User</label>
+                        <select id="filter-by-user">
+                            <option value="">All Users</option>
+                        </select>
+                    </div>
+                     <button id="reset-filters-btn">Reset Filters</button>
+                </div>
+                <div class="admin-table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Plan</th>
+                                <th>User</th>
+                                <th>Rating</th>
+                                <th class="comment-col">Comment</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feedback-table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="modal" id="plan-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-plan-modal">&times;</button>
+            <h3 class="modal__title" id="plan-modal-title">Add Plan</h3>
+            <form id="plan-form" class="admin-form" novalidate>
+                <input type="hidden" id="plan-id">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="plan-name">Plan Name<span class="required">*</span></label>
+                        <input type="text" id="plan-name" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan-type">Type<span class="required">*</span></label>
+                        <input type="text" id="plan-type" placeholder="e.g., Individual, Family" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan-price">Price ($/mo)<span class="required">*</span></label>
+                        <input type="number" id="plan-price" min="0" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan-coverage">Coverage ($)<span class="required">*</span></label>
+                        <input type="number" id="plan-coverage" min="0" required>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan-tier">Tier</label>
+                        <select id="plan-tier">
+                            <option value="">None</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan-rating">Rating (1.0-5.0)</label>
+                        <input type="number" id="plan-rating" min="1" max="5" step="0.1">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="plan-description">Description<span class="required">*</span></label>
+                        <textarea id="plan-description" rows="3" required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="plan-image">Image URL</label>
+                        <input type="url" id="plan-image">
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="save-plan-btn" disabled>Save Plan</button>
+                    <button type="button" id="clear-form-btn">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- НОВОЕ МОДАЛЬНОЕ ОКНО ДЛЯ ДЕТАЛЬНОЙ ИНФОРМАЦИИ О ПЛАНЕ -->
+    <div class="modal" id="plan-details-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-details-modal">&times;</button>
+            <h3 class="modal__title">Plan Details</h3>
+            <div id="plan-details-content">
+                <!-- Здесь будет динамически вставляться информация о плане -->
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ПОДТВЕРЖДЕНИЯ УДАЛЕНИЯ -->
+    <div class="modal" id="delete-confirm-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-delete-modal">&times;</button>
+            <h3 class="modal__title">Confirm Deletion</h3>
+            <p id="delete-confirm-message"></p>
+            <div class="form-actions">
+                <button id="confirm-delete-btn">Delete</button>
+                <button id="cancel-delete-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для всплывающих уведомлений -->
+    <div id="toast-container" class="toast-container"></div>
+    
+    <!-- Скрипты -->
+    <script src="js/toasts.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

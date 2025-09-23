@@ -115,27 +115,26 @@
   ],
   "cart": [
     {
-      "id": 3,
-      "name": "Corporate+",
-      "type": "Corporate",
-      "price": 55,
-      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
-      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
-      "coverage": 25000,
-      "tier": "silver",
-      "rating": 4,
-      "quantity": 3
+      "id": 6,
+      "name": "Student Health",
+      "type": "Individual",
+      "price": 20,
+      "description": "Affordable basic coverage tailored for students.",
+      "image": "https://placehold.co/600x400/9B59B6/FFFFFF?text=Student",
+      "coverage": 3000,
+      "tier": "bronze",
+      "rating": 4.1
     },
     {
-      "id": 2,
-      "name": "Family Standard",
-      "type": "Family",
-      "price": 70,
-      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
-      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
-      "coverage": 15000,
-      "tier": "silver",
-      "rating": 4.5
+      "id": 4,
+      "name": "Premium Gold",
+      "type": "Individual",
+      "price": 95,
+      "description": "Maximum coverage for serious conditions and accidents, including hospitalization.",
+      "image": "https://placehold.co/600x400/FFD700/000000?text=Premium+Gold",
+      "coverage": 50000,
+      "tier": "gold",
+      "rating": 4.8
     }
   ],
   "users": [

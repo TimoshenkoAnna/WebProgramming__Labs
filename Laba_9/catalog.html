@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Plans - Brella</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -22,12 +23,14 @@
                 <div class="links" id="nav-links">
                     <li><a href="catalog.html" class="link__item">Our Plan</a></li>
                     <li><a href="favorites.html" class="link__item">Favorites</a></li>
-                    <li><a href="cart.html" class="link__item">Cart</a></li>
+                    <li><a href="cart.html" class="link__item">Cart <span class="nav-counter" id="cart-counter">0</span></a></li>
                     <li><a href="register.html" class="link__item">Register</a></li>
                     <li><a class="link__item">About</a></li>
                     <li><a class="link__item">Blog</a></li>
                     <li><button class="link__button">Request demo</button></li>
-                    <select class="auth__section"><option>Login</option></select>
+                    <select class="auth__section">
+                        <option>Login</option>
+                    </select>
                     <li><a class="link__item">EN</a></li>
                 </div>
                 <div class="burger-menu" id="burger-menu">
@@ -76,7 +79,6 @@
         </div>
     </footer>
 
-    <!-- НОВЫЙ КОД: Модальное окно для детальной информации -->
     <div class="modal" id="plan-details-modal">
         <div class="modal__content">
             <button class="modal__close">&times;</button>
@@ -97,5 +99,6 @@
     <script src="js/burger-menu.js"></script>
     <script src="js/catalog.js"></script>
     <script src="js/main.js"></script> 
+    <script src="js/nav-counters.js"></script>
 </body>
 </html>

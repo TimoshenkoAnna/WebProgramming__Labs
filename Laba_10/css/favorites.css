@@ -1,0 +1,41 @@
+/* СТИЛИ ДЛЯ СТРАНИЦЫ ИЗБРАННОГО */
+
+.favorites-empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 80px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(33, 78, 65, 0.07);
+}
+
+.favorites-empty-message h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #214E41;
+    margin-bottom: 15px;
+}
+
+.favorites-empty-message p {
+    font-family: 'Raleway', sans-serif;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.remove-from-favorites-btn {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #c94c4c;
+    background-color: transparent;
+    color: #c94c4c;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.remove-from-favorites-btn:hover {
+    background-color: #c94c4c;
+    color: #fff;
+}

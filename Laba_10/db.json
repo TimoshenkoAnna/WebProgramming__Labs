@@ -1,0 +1,216 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Basic Shield",
+      "type": "Individual",
+      "price": 25,
+      "description": "Covers essential risks like fractures and minor injuries. A great start for your safety.",
+      "image": "https://placehold.co/600x400/43806C/FFFFFF?text=Basic+Shield",
+      "coverage": 5000,
+      "tier": "bronze",
+      "rating": 4.2
+    },
+    {
+      "id": 2,
+      "name": "Family Standard",
+      "type": "Family",
+      "price": 70,
+      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
+      "coverage": 15000,
+      "tier": "silver",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Premium Gold",
+      "type": "Individual",
+      "price": 95,
+      "description": "Maximum coverage for serious conditions and accidents, including hospitalization.",
+      "image": "https://placehold.co/600x400/FFD700/000000?text=Premium+Gold",
+      "coverage": 50000,
+      "tier": "gold",
+      "rating": 4.8
+    },
+    {
+      "id": 5,
+      "name": "Traveler's Secure",
+      "type": "Individual",
+      "price": 40,
+      "description": "Essential coverage for unforeseen medical emergencies while traveling abroad.",
+      "image": "https://placehold.co/600x400/3498DB/FFFFFF?text=Traveler's",
+      "coverage": 10000,
+      "tier": "bronze",
+      "rating": 4.3
+    },
+    {
+      "id": 6,
+      "name": "Student Health",
+      "type": "Individual",
+      "price": 20,
+      "description": "Affordable basic coverage tailored for students.",
+      "image": "https://placehold.co/600x400/9B59B6/FFFFFF?text=Student",
+      "coverage": 3000,
+      "tier": "bronze",
+      "rating": 4.1
+    },
+    {
+      "id": 7,
+      "name": "Family Plus",
+      "type": "Family",
+      "price": 120,
+      "description": "Extended family plan with higher limits and more covered conditions.",
+      "image": "https://placehold.co/600x400/1ABC9C/FFFFFF?text=Family+Plus",
+      "coverage": 30000,
+      "tier": "gold",
+      "rating": 4.7
+    },
+    {
+      "id": 8,
+      "name": "Business Pro",
+      "type": "Corporate",
+      "price": 80,
+      "description": "Premium corporate plan for comprehensive employee well-being.",
+      "image": "https://placehold.co/600x400/34495E/FFFFFF?text=Business+Pro",
+      "coverage": 40000,
+      "tier": "gold",
+      "rating": 4.6
+    }
+  ],
+  "favorites": [
+    {
+      "id": 2,
+      "name": "Family Standard",
+      "type": "Family",
+      "price": 70,
+      "description": "Comprehensive protection for the whole family. Includes child injuries and common illnesses.",
+      "image": "https://placehold.co/600x400/214E41/FFFFFF?text=Family+Standard",
+      "coverage": 15000,
+      "tier": "silver",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Corporate+",
+      "type": "Corporate",
+      "price": 55,
+      "description": "A special offer for teams of 10 or more. Extended coverage and flexible terms.",
+      "image": "https://placehold.co/600x400/E3EEED/214E41?text=Corporate+",
+      "coverage": 25000,
+      "tier": "silver",
+      "rating": 4
+    },
+    {
+      "userId": 2,
+      "planId": 2,
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "planId": 3,
+      "id": 5
+    }
+  ],
+  "cart": [],
+  "users": [
+    {
+      "id": 1,
+      "nickname": "AdminUser123",
+      "email": "admin@example.com",
+      "phone": "+375 (29) 123-45-67",
+      "dob": "1990-01-01",
+      "firstName": "Admin",
+      "lastName": "Brella",
+      "password": "hashed_password_example",
+      "role": "admin"
+    },
+    {
+      "lastName": "Иванов",
+      "firstName": "Иван",
+      "middleName": "Иванович",
+      "dob": "2001-06-13",
+      "email": "1@gmail.com",
+      "phone": "+375 (33) 346-87-12",
+      "nickname": "ИваИва532",
+      "password": "Autoohsphisuzs!1",
+      "role": "customer",
+      "id": 2
+    },
+    {
+      "lastName": "Петров",
+      "firstName": "Петр",
+      "middleName": "",
+      "dob": "2000-06-15",
+      "email": "petr@gmail.com",
+      "phone": "+375 (33) 346-87-35",
+      "nickname": "ПетПет421",
+      "password": "Autompydp6g923!1",
+      "role": "customer",
+      "id": 3
+    }
+  ],
+  "feedback": [
+    {
+      "id": 1,
+      "planId": 1,
+      "userId": 2,
+      "nickname": "ИваИва532",
+      "rating": 5,
+      "comment": "Excellent basic plan! Very affordable.",
+      "date": "2025-08-29T10:00:00.000Z",
+      "status": "approved"
+    },
+    {
+      "id": 2,
+      "planId": 4,
+      "userId": 3,
+      "nickname": "ПетПет421",
+      "rating": 4,
+      "comment": "Good coverage, but the price is a bit high.",
+      "date": "2025-08-30T12:00:00.000Z",
+      "status": "pending"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 2,
+      "date": "2025-08-28T14:35:10.000Z",
+      "total": 25,
+      "items": [
+        {
+          "planId": 1,
+          "name": "Basic Shield",
+          "quantity": 1,
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "date": "2025-08-29T11:20:00.000Z",
+      "total": 95,
+      "items": [
+        {
+          "planId": 4,
+          "name": "Premium Gold",
+          "quantity": 1,
+          "price": 95
+        }
+      ]
+    }
+  ]
+}

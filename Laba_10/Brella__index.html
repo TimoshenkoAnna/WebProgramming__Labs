@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/parallax.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title data-i18n="siteTitle">Brella</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__spinner"></div>
+    </div>
+
+    <div class="overlay"></div>
+ 
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="nav__container">
+                <a href="Brella__index.html" class="logo"><img src="img/Frame.png" alt="Brella Logo"></a>
+            
+                <div class="links" id="nav-links">
+                    <li><a href="catalog.html" class="link__item" data-i18n="navOurPlan">Our Plan</a></li>
+                    <li><a href="favorites.html" class="link__item" data-i18n="navFavorites">Favorites</a></li>
+                    <li><a href="cart.html" class="link__item" data-i18n="navCart">Cart <span class="nav-counter" id="cart-counter">0</span></a></li>
+                    <li><a href="register.html" class="link__item" data-i18n="navRegister">Register</a></li>
+                    
+                    <div id="auth-guest" style="display: flex; align-items: center;">
+                        <select class="auth__section">
+                            <option data-i18n="navLogin">Login</option>
+                        </select>
+                    </div>
+
+                    <div id="auth-user" style="display: none; align-items: center; gap: 15px;">
+                        <svg id="user-profile-icon" class="user-profile-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                        <button id="logout-btn" class="link__button" data-i18n="navLogout">Logout</button>
+                    </div>
+
+                    <div class="controls-container">
+                        <button id="theme-switcher" class="theme-switcher-btn" title="Switch Theme">
+                            <span class="theme-icon">☀</span>
+                        </button>
+                        <div class="lang-switcher">
+                            <button data-lang="en" class="lang-btn active">EN</button>
+                            <button data-lang="ru" class="lang-btn">RU</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-menu" id="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        <div class="header__container">
+            <div class="header__block">
+                <h2 data-i18n="headerTitle">Give your team peace of mind with supplemental health insurance from Brella.</h2>
+                <p data-i18n="headerSubtitle">I'm wondering...</p>
+                <div class="header__inputs">
+                    <input type="text" data-i18n="headerInputPlaceholder" placeholder="how Brella's plan works">
+                    <button data-i18n="headerButton">Find out</button>
+                </div>
+            </div>
+            <div class="header__items_body">
+                <div class="header__items">
+                    <div class="header__item">
+                        <img src="img/header_item_1.png" draggable="false" class="header__item_img" data-theme-src-light="img/header_item_1.png" data-theme-src-dark="img/header_item_1_dark.png">
+                        <div class="header__item_text">
+                            <p class="header__item_title" data-i18n="coverageTitle">More coverage</p>
+                            <p class="header__item_subtitle" data-i18n="coverageSubtitle">Brella covers 13,000+ injuries and illnesses from concussions to cancer.</p>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <img src="img/header_item_2.png" draggable="false" class="header__item_img" data-theme-src-light="img/header_item_2.png" data-theme-src-dark="img/header_item_2_dark.png">
+                        <div class="header__item_text">
+                            <p class="header__item_title" data-i18n="hassleTitle">Less hassle</p>
+                            <p class="header__item_subtitle" data-i18n="hassleSubtitle">One easy-to-manage plan with paperless install and online admin tools.</p>
+                        </div>
+                    </div>
+                    <div class="header__item">
+                        <img src="img/header_item_3.png" draggable="false" class="header__item_img" data-theme-src-light="img/header_item_3.png" data-theme-src-dark="img/header_item_3_dark.png">
+                        <div class="header__item_text">
+                            <p class="header__item_title" data-i18n="benefitsTitle">Faster benefits</p>
+                            <p class="header__item_subtitle" data-i18n="benefitsSubtitle">Brella pays claims in hours–not weeks so your people can rest easy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="content__why" id="why-brella">
+            <div class="content__why_container">
+                <div class="content__why_column animate-on-scroll">
+                    <span class="content__why_question" data-i18n="whyQuestion">Why Brella?</span>
+                    <h3 class="content__why_title" data-i18n="whyTitle">Today, any health insurance deductible can feel like a high deductible.</h3>
+                    <p class="content__why_subtitle" data-i18n="whySubtitle">Brella's supplemental health plan enhances your health benefit strategy to ensure that health hardships don't become financial burdens.</p>
+                    <a href="#our-plan" class="content__why_link" data-i18n="whyLink">See our <br> plan</a>
+                </div>
+                <div class="why-data__wrapper animate-on-scroll">
+                    <div class="content__why_column_text">
+                        <h3 class="content__analytic_title">60%</h3>
+                        <p class="content__analytic_subtitle" data-i18n="analyticSubtitle">of Americans <span>would have to borrow</span> to cover an unexpected $1000 expense</p>
+                    </div>
+                    <div class="why_column">
+                        <div class="content__why_item h11">
+                            <p class="why__item_price">$1,644</p>
+                            <div class="why__item_height height__deductible"></div>
+                            <p class="why__item_title" data-i18n="deductible">Deductible</p>
+                        </div>
+                        <div class="content__why_item">
+                            <p class="why__item_price">$1,644</p>
+                            <div class="why__item_height height__anual"></div>
+                            <p class="why__item_title" data-i18n="deductible">Deductible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content__customize" id="features">
+            <div class="customize__item_custom animate-on-scroll">
+                <span class="item__custom_author" data-i18n="brellaBrings">brella brings</span>
+                <ul>
+                    <li><p class="item__custom_link link_active" data-i18n="customizableBenefits">Customizable benefits</p></li>
+                    <li><p class="item__custom_link" data-i18n="paperlessAdmin">Paperless install & admin</p></li>
+                    <li><p class="item__custom_link" data-i18n="effortlessEnrollment">Effortless enrollment</p></li>
+                    <li><p class="item__custom_link" data-i18n="easyClaims">Easy claims experience</p></li>
+                    <li><p class="item__custom_link" data-i18n="fastPayouts">Fast benefit payouts</p></li>
+                    <li><p class="item__custom_link" data-i18n="conciergeSupport">Concierge support</p></li>
+                </ul>
+            </div>
+            <div class="customize__item_description animate-on-scroll">
+                <p class="item_description" data-i18n="customizeDescription">
+                    Every Brella plan comes with a benefit for Moderate, Severe, and Catastrophic conditions. Employees can select the payout amounts that fit their needs and their budget.
+                    Employers can fund part or all of the premiums—or offer Brella as a voluntary benefit. The choice is up to you.
+                </p>
+            </div>
+        </section>
+
+        <section class="content__rating" id="our-plan">
+            <div class="parallax-layer parallax-layer-bg" data-speed="0.8" data-max-move="100"></div>
+            <div class="parallax-layer parallax-layer-mid" data-speed="2.5" data-max-move="200"></div>
+            <div class="parallax-layer parallax-layer-front" data-speed="3.5" data-max-move="200"></div>
+            <div class="parallax-layer parallax-layer-reverse" data-speed="-3" data-max-move="180"></div>
+
+            <div class="raiting__column parallax-content" data-speed="0.2" data-max-move="30">
+                <div class="raiting__container_main">
+                    <div class="raiting__body animate-on-scroll">
+                        <span class="raiting__main_slogan" data-i18n="onePlanSlogan">one plan, more coverage</span>
+                        <h3 class="raiting__main_title" data-i18n="predictHealthTitle">No one can predict which health issues might come their way.</h3>
+                        <p class="raiting__main_subtitle" data-i18n="predictHealthSubtitle">Our broad supplemental coverage gets rid of the guesswork and puts cash in your team’s pockets for most conditions that require urgent medical attention.</p>
+                    </div>
+                    <div class="raiting__main_image animate-on-scroll">
+                        <img src="img/raiting_img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="raiting__column parallax-content" data-speed="0.3" data-max-move="40">
+                <div class="raiting__container_main">
+                    <div class="raiting__item animate-on-scroll">
+                        <h2 class="raiting__item_title">5k</h2>
+                        <p class="raiting__item_subtitle" data-i18n="coveredInjuries">covered injuries and illnesses from fractures and appendicitis to cancer</p>
+                    </div>
+                    <div class="raiting__item animate-on-scroll">
+                        <h2 class="raiting__item_title">1x</h2>
+                        <p class="raiting__item_subtitle" data-i18n="moreCovered">more covered conditions than Accident and Critical Illness plans—combined</p>
+                    </div>
+                    <div class="raiting__item animate-on-scroll">
+                        <h2 class="raiting__item_title">40%</h2>
+                        <p class="raiting__item_subtitle" data-i18n="guaranteedIssue">plans are 100% guaranteed issue. No medical underwriting required</p>
+                    </div>
+                    <div class="raiting__item animate-on-scroll">
+                        <h2 class="raiting__item_title">0</h2>
+                        <p class="raiting__item_subtitle" data-i18n="zeroExclusions">Zero limitations or exclusions for pre-existing conditions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="raiting__column parallax-content" data-speed="0.4" data-max-move="50">
+                <div class="raiting__container_phone">
+                    <div class="raiting__phone animate-on-scroll">
+                        <img src="img/phone.png">
+                    </div>
+                    <div class="raiting__phone_text animate-on-scroll">
+                        <span class="raiting__main_slogan" data-i18n="claimsSlogan">a better claims experience</span>
+                        <h3 class="raiting__main_title" data-i18n="claimsTitle">Give your people a plan that pays in hours—not weeks.</h3>
+                        <p class="raiting__main_subtitle" data-i18n="claimsSubtitle">Your team can’t wait for peace of mind. Brella pays on diagnosis, so members can file a claim sooner and get paid faster via our Member Portal or mobile app.</p>
+                        <a href="#video-section" class="content__why_link" data-i18n="playVideo">Play Video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content__brokers" id="for-brokers">
+            <div class="brokers__container animate-on-scroll">
+                <span class="raiting__main_slogan" data-i18n="forEmployers">for employers</span>
+                <h3 class="raiting__main_title" data-i18n="enrollmentTitle">Easy enrollment meets simple administration.</h3>
+                <p class="raiting__main_subtitle" data-i18n="enrollmentSubtitle">Brella brings 100% paperless implementation, enrollment, and admin. Plug into our platforms or we’ll plug into yours.</p>
+                <a href="#features" class="content__why_link" data-i18n="learnMore">Learn More</a>
+            </div>
+        </section>
+        
+        <section class="content__slider">
+            <div class="slider__container animate-on-scroll">
+                <h3 class="slider__title" data-i18n="backedBy">Proudly backed by</h3>
+                <div class="slider" id="custom-slider">
+                    <span class="slider__arrow" id="prev-btn">←</span>
+                    <div class="slider__content">
+                        <div class="slider__container_img" id="slider-track">
+                            <img src="img/01.png" class="slider_item">
+                            <img src="img/02.png" class="slider_item">
+                            <img src="img/03.png" class="slider_item">
+                            <img src="img/01.png" class="slider_item">
+                            <img src="img/02.png" class="slider_item">
+                        </div>
+                    </div>
+                    <span class="slider__arrow" id="next-btn">→</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__media-gallery">
+            <div class="media-gallery__container animate-on-scroll">
+                <h2 class="media-gallery__title" data-i18n="galleryTitle">Интерактивная медиагалерея</h2>
+                <p class="media-gallery__subtitle" data-i18n="gallerySubtitle">Нажимайте на изображение или кнопку "Далее" для взаимодействия</p>
+                <div class="media-gallery__player">
+                    <div class="media-gallery__image-wrapper">
+                        <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" id="gallery-image" alt="Gallery Image" title="Нажмите, чтобы сменить изображение">
+                    </div>
+                    <audio id="gallery-audio"></audio>
+                    <div class="media-gallery__controls">
+                        <button id="play-pause-btn" class="control-button" title="Воспроизведение/Пауза">
+                            <span id="player-state-indicator">
+                                <img src="https://img.icons8.com/ios-filled/50/ffffff/play.png" alt="Play"/>
+                            </span>
+                        </button>
+                        <div class="volume-control-wrapper">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/high-volume.png" alt="Volume"/>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.05" value="0.7" class="volume-slider" title="Громкость">
+                        </div>
+                        <button id="next-media-btn" class="control-button" title="Следующее изображение">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/end.png" alt="Next"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__video-trigger" id="video-section">
+            <div class="video-trigger__container animate-on-scroll">
+                <h2 class="media-gallery__title" data-i18n="videoTitle">Посмотрите наше видео</h2>
+                <p class="media-gallery__subtitle" data-i18n="videoSubtitle">Нажмите на изображение, чтобы запустить видеоплеер</p>
+                <div id="video-trigger-wrapper" class="video-trigger__wrapper">
+                    <img src="https://images.pexels.com/photos/2832061/pexels-photo-2832061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="video-trigger__image" alt="Запустить видео">
+                    <div class="video-trigger__play-icon"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__about" id="about">
+            <div class="about__container">
+                <div class="about__item animate-on-scroll">
+                    <a><img src="img/1.jpg" class="about__item_img"></a>
+                    <a class="about__item_title" data-i18n="podcast">Podcast</a>
+                    <h3 class="about__item_subtitle" data-i18n="podcastTitle">Better Voluntary Benefits with NFP Voluntary Benefits Practice Leader, Kim Heald</h3>
+                </div>
+                <div class="about__item animate-on-scroll">
+                    <a><img src="img/2.jpg" class="about__item_img"></a>
+                    <a class="about__item_title" data-i18n="insuranceInnovation">Insurance Innovation</a>
+                    <h3 class="about__item_subtitle" data-i18n="insuranceTitle">How to Design Simpler Insurance Benefits</h3>
+                </div>
+                <div class="about__item animate-on-scroll">
+                    <a><img src="img/3.jpg" class="about__item_img"></a>
+                    <a class="about__item_title" data-i18n="benefitsStrategy">Benefits Strategy</a>
+                    <h3 class="about__item_subtitle" data-i18n="benefitsTitle2">Executive Benefits Outlook with Dan Aceti</h3>
+                </div>
+            </div>
+        </section>
+        <section class="content__blog">
+            <div class="blog__column_photo"></div>
+            <div class="blog__column_content animate-on-scroll">
+                <h2 class="blog__content_title" data-i18n="readyToExplore">Ready to explore Brella’s supplemental health solution?</h2>
+                <h2 class="blog__content_subtitle" data-i18n="letsTalk">Let’s talk.</h2>
+                <button class="blog__content_button" data-i18n="getInTouch">Get in touch</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal__content">
+            <button id="video-modal-close" class="video-modal__close">&times;</button>
+            <video id="modal-video-player" controls width="100%"></video>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="Brella__index.html" class="footer__logo">Brella</a>
+                <ul class="footer__links_ul">
+                    <li><p class="footer__link_active" data-i18n="footerJoin">Join Brella</p></li>
+                    <li><a class="footer__link" data-i18n="footerOurPlan">Our Plan</a></li>
+                    <li><a class="footer__link" data-i18n="footerEmployers">Employers</a></li>
+                    <li><a class="footer__link" data-i18n="footerBrokers">Brokers</a></li>
+                    <li><a class="footer__link" data-i18n="footerMembers">Members</a></li>
+                </ul>
+                <ul class="footer__links_ul">
+                    <li><p class="footer__link_active" data-i18n="footerCompany">Company</p></li>
+                    <li><a class="footer__link" data-i18n="footerAbout">About</a></li>
+                    <li><a class="footer__link" data-i18n="footerBlog">Blog</a></li>
+                    <li><a class="footer__link" data-i18n="footerCareers">Careers</a></li>
+                    <li><a class="footer__link" data-i18n="footerContact">Contact</a></li>
+                </ul>
+                <div class="footer__inputs">
+                    <div class="footer__inputs_title" data-i18n="footerGetLatest">Get the latest</div>
+                    <div class="footer__inputs_subtitle" data-i18n="footerSignUp">Sign up to receive benefits news and insights in your inbox once a month.</div>
+                    <div class="footer_input">
+                        <input type="text" placeholder="Email*" data-i18n="footerEmailPlaceholder">
+                        <button>→</button>
+                    </div>
+                    <div class="social_links">
+                        <a><img src="img/social1.svg"></a>
+                        <a><img src="img/social2.svg"></a>
+                        <a><img src="img/social3.svg"></a>
+                        <a><img src="img/social4.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="user-profile-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-profile-modal">&times;</button>
+            <h3 class="modal__title" data-i18n="profileModalTitle">My Profile</h3>
+            <form id="profile-form" class="admin-form" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="profile-lastName" data-i18n="formLastName">Last Name</label>
+                        <input type="text" id="profile-lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-firstName" data-i18n="formFirstName">First Name</label>
+                        <input type="text" id="profile-firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-email" data-i18n="formEmail">Email</label>
+                        <input type="email" id="profile-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-phone" data-i18n="formPhone">Phone</label>
+                        <input type="tel" id="profile-phone" required>
+                    </div>
+                     <div class="form-group">
+                        <label for="profile-dob" data-i18n="formDob">Date of Birth</label>
+                        <input type="date" id="profile-dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="profile-nickname" data-i18n="formNickname">Nickname</label>
+                        <input type="text" id="profile-nickname" readonly>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="save-profile-btn" data-i18n="profileSaveChanges">Save Changes</button>
+                    <button type="button" id="reset-settings-btn" data-i18n="profileResetSettings">Reset Settings</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/preloader.js"></script>
+    <script src="js/translation.js"></script> 
+    <script src="js/theme.js"></script>     
+    <script src="js/session.js"></script>  
+    <script src="js/main.js"></script>      
+    <script src="js/slider.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/map-modal.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/nav-counters.js"></script>
+</body>
+</html>
